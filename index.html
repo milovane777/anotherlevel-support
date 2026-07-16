@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Another Level</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #1a1d24;
+    --text: #f0f2f5;
+    --muted: #9aa4b2;
+    --accent: #5b8def;
+    --border: #2a2e37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    color: var(--muted);
+    margin-bottom: 48px;
+    font-size: 15px;
+  }
+  .grid {
+    display: grid;
+    gap: 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    transition: border-color 0.15s ease;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h2 {
+    font-size: 17px;
+    margin: 0 0 6px;
+  }
+  .card p {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .card a:hover { text-decoration: underline; }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+  }
+  footer {
+    margin-top: 48px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Another Level</h1>
+  <p class="tagline">음악 · 와인 · 게임 · AI 애플리케이션을 아우르는 통합 브랜드입니다.</p>
+
+  <div class="grid">
+    <div class="card">
+      <span class="badge">APP</span>
+      <h2>Eye Health App</h2>
+      <p>생애주기 눈건강 관리 앱.</p>
+      <a href="eye-health/">지원 페이지 →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">APP</span>
+      <h2>Our Beautiful Time</h2>
+      <p>수명 배터리 컨셉의 가족·친구 공유 앱.</p>
+      <a href="our-beautiful-time/">지원 페이지 →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">APP</span>
+      <h2>CEO Note</h2>
+      <p>소상공인을 위한 AI 사무 에이전트.</p>
+      <a href="ceo-note/">지원 페이지 →</a>
+    </div>
+  </div>
+
+  <footer>© 2026 Another Level</footer>
+</div>
+</body>
+</html>
